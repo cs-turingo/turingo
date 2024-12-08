@@ -11,46 +11,49 @@ import arrowLeft from '../icons/arrowLeft.svg';
 import arrowRigth from '../icons/arrowRigth.svg';
 
 export default function Home() {
-   /* <Recommendation titulo="Provincias para visitar" paragrafo="Mais coisas para fazer em Angola" 
-          infoImg1="Huíla"
-          infoImg2="Benguela"
-          infoImg3="Luanda"
-          infoImg4="Malanje"
-          infoImg5="Uíge"
-          infoImg6="Lunda Norte"
-          infoImg7="Muxico"
-          src1={img1}
-          src2={img2} 
-          src3={img3} 
-          src4={img4}
-          src5={img5} 
-          src6={img6} 
-          src7={img7} 
-          arrowLeft={arrowLeft}
-          arrowRigth={arrowRigth}
-          />
-         <Recommendation titulo="Espaços de conforto e Lazer" paragrafo="Mais coisas para feazer em Angola" 
-         infoImg1="Girafa"
-         infoImg2="CLube piscina"
-         infoImg3="Décifer"
-         infoImg4="Hotel das pedras"
-         infoImg5="hotel Luanda"
-         infoImg6="Fortaleza"
-         infoImg7="Hotel continental"
-         src1={img1}
-          src2={img1} 
-          src3={img1} 
-          src4={img1}
-          src5={img1} 
-          src6={img1} 
-          src7={img1}
-          arrowLeft={arrowLeft}
-          arrowRigth={arrowRigth}
-         /> */
+
+  // Informações dos cards 
+   const data = [
+      {
+          id: 1,
+          src: img1,
+          infoImg: "Huila"
+      },
+      {
+          id: 2,
+          src: img2,
+          infoImg: "Luanda"
+      },
+      {
+          id: 3,
+          src: img3,
+          infoImg: "Benguela"
+      },
+      {
+          id: 4,
+          src: img4,
+          infoImg: "Namibe"
+      },
+      {
+          id: 5,
+          src: img5,
+          infoImg: "Malange"
+      },
+      {
+          id: 6,
+          src: img6,
+          infoImg: "Huambo"
+      },
+      {
+          id: 7,
+          src: img7,
+          infoImg: "Uíge"
+      }
+  ]
 
     return(
        <>
-       <Footer/>
+         <Footer/>
        </>
     );
 }
