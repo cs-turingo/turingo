@@ -1,0 +1,55 @@
+header {
+  padding: 10px 20px;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  & .icon {
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  & img {
+    display: block;
+    height: 45px;
+  }
+
+  @media screen and (min-width: 700px) {
+    height: 100%;
+    padding: 10px 30px;
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    grid-auto-rows: 100%;
+    grid-template-areas: 
+      "logo navBar userControls";
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+
+    & .navBarIcon {
+      display: none;
+    }
+
+    & .userIcon {
+      grid-area: userControls;
+    }
+
+    & .logo {
+      grid-area: logo;
+    }
+
+    & .navBar {
+      grid-area: navBar;
+      align-self: start;
+      justify-self: end !important;
+    }
+  }
+}
