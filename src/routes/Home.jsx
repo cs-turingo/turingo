@@ -9,6 +9,7 @@ import img6 from '../images/img6.jpg'
 import img7 from '../images/img7.jpg'
 import arrowLeft from '../icons/arrowLeft.svg';
 import arrowRigth from '../icons/arrowRigth.svg';
+import ProvincePresentation from "../components/province_presentation_section/provincePresentation";
 
 export default function Home() {
 
@@ -53,7 +54,7 @@ export default function Home() {
 
     return(
        <>
-         <Footer/>
+       <ProvincePresentation nameOfProvince={"Benguela"}/>
        </>
     );
 }

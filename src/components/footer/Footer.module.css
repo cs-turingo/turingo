@@ -2,6 +2,8 @@ footer{
     width:100wh;
     min-height: 400px;
     background-color: #F2F2F2;
+    margin-top: 20px;
+   
 }
 
 .section1 {
@@ -50,7 +52,6 @@ footer{
         justify-content: center;
         gap: 10px;
         margin-bottom: 20px;
-
 
         & select {
             width: 90%;

@@ -1,7 +1,6 @@
 import styles from './Footer.module.css';
 import logo from '../../images/turingo_Logo.jpg'
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 export default function Footer() {
 
@@ -13,30 +12,18 @@ export default function Footer() {
 
     const handleClick = () => {
         setIsActive(!isActive);
-        setIsActive1(()=> {return  isActive1=false} );
-        setIsActive2(()=> {return  isActive2=false});
-        setIsActive3(()=> {return  isActive3=false});
          // Alterna entre true e false
     };
     const handleClick1 = () => {
         setIsActive1(!isActive1); 
-        setIsActive(()=> {return  isActive=false} );
-        setIsActive2(()=> {return  isActive2=false});
-        setIsActive3(()=> {return  isActive3=false});
         // Alterna entre true e false
     };
     const handleClick2 = () => {
         setIsActive2(!isActive2);
-        setIsActive1(()=> {return  isActive1=false} );
-        setIsActive(()=> {return  isActive=false});
-        setIsActive3(()=> {return  isActive3=false});
         // Alterna entre true e false
     };
     const handleClick3 = () => {
         setIsActive3(!isActive3); 
-        setIsActive1(()=> {return  isActive1=false} );
-        setIsActive2(()=> {return  isActive2=false});
-        setIsActive(()=> {return  isActive=false});
         // Alterna entre true e false
     };
 
