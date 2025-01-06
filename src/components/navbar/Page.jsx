@@ -13,7 +13,7 @@ import { IoMdClose } from "react-icons/io";
 export default function Navbar ({navBarStatus, setNavBarStatus}) {
   return (
     <div className={`
-      ${styles.shadow}
+      ${styles.headerVersion}
       ${!navBarStatus && styles.closed}`}
       onClick={() => {setNavBarStatus(!navBarStatus)}}
     >
