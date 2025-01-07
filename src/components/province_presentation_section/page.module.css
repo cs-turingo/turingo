@@ -71,6 +71,10 @@
     .advertising {
         display: none;
     }
+
+    .containerSlide {
+        max-height: 300px;
+    }
 }
 
 @media (width >= 700px) {
