@@ -1,8 +1,8 @@
 import styles from './page.module.css';
 import Rating from './rating/Page.jsx';
 import publicidade from '../../images/advertising.png'
-import heart from '../../images/heart.png';
-import boxOut from '../../images/inbox_out.png';
+import { MdOutlineOutbox } from "react-icons/md";
+import { FaRegHeart } from "react-icons/fa";
 import Slider from "./slider/Page.jsx";
 
 export default function ProvincePresentation(props) {
@@ -20,11 +20,11 @@ export default function ProvincePresentation(props) {
                     </div>
                 </div>
             
-                <div className={styles.containerBtn}>
-                    <img src={boxOut} alt="boxOut" />
+                <div className={styles.containerIcons}>
+                    <MdOutlineOutbox className={styles.icon}/>    
                     
                     <div className={styles.containerSave}>
-                        <img src={heart} className={styles.icon} alt="heart" />
+                        <FaRegHeart className={styles.icon}  />
                     </div>
                 </div>
             </section>

@@ -1,5 +1,4 @@
 import Recommendation from "../components/recommendation/Recommendation";
-import Footer from "../components/footer/Footer";
 import img1 from '../images/img1.jpg'
 import img2 from '../images/img2.jpg'
 import img3 from '../images/img3.jpg'
@@ -7,8 +6,6 @@ import img4 from '../images/img4.jpg'
 import img5 from '../images/img5.jpg'
 import img6 from '../images/img6.jpg'
 import img7 from '../images/img7.jpg'
-import arrowLeft from '../icons/arrowLeft.svg';
-import arrowRigth from '../icons/arrowRigth.svg';
 import Sponsors from "../components/sponsors/Page.jsx";
 import ProvincePresentation from "../components/province_presentation_section/Page.jsx";
 
@@ -57,6 +54,7 @@ export default function Home() {
        <>
        <ProvincePresentation nameOfProvince={"Benguela"}/>
        <Sponsors/>
+       <Recommendation  data={data} paragrafo={"Quero aprender sobre Mercado Digital. Identifique e partilhe os 20% de aprendizagens mais importantes deste tema que me ajudarão a compreender 80% do mesmo."} titulo={"Luanda"} />
        </>
     );
 }

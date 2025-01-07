@@ -1,15 +1,16 @@
 import styles from "./Recommendation.module.css"
 import { FaRegHeart } from "react-icons/fa";
-import heart from '../../icons/heart.svg';
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { useRef } from "react";
-export default function Recommendation({titulo, paragrafo,data, arrowLeft, arrowRigth}) {
+
+export default function Recommendation({titulo, paragrafo,data}) {
 
     let carousel= useRef(null);
   
-    function rightCLick(e) {
+    function rightCLick() {
         carousel.current.scrollLeft += carousel.current.offsetWidth;
     }
-    function leftCLick(e) {
+    function leftCLick() {
         carousel.current.scrollLeft -= carousel.current.offsetWidth;
     }
     return(
@@ -22,7 +23,7 @@ export default function Recommendation({titulo, paragrafo,data, arrowLeft, arrow
         </p>
         <div className={styles.carousel}>
             {/* seta esquerda */}
-            <span className={styles.left} onClick={leftCLick}><img src={arrowLeft} alt="arrow left" /></span>
+            <span className={styles.left} onClick={leftCLick}><FaArrowLeft /></span>
 
             <div className={styles.containerCarousel} ref={carousel}>
                     {  /* Renderização dos cards */
@@ -46,7 +47,7 @@ export default function Recommendation({titulo, paragrafo,data, arrowLeft, arrow
             </div>
 
             {/* seta direita */}
-            <span className={styles.rigth} onClick={rightCLick}><img src={arrowRigth} alt="arrow rigth" /></span>
+            <span className={styles.rigth} onClick={rightCLick}><FaArrowRight /></span>
 
         </div>
         </section>
