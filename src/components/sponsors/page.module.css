@@ -1,0 +1,20 @@
+.sectionSponsors {
+    
+    width: 90%;
+    height: 130px;
+    margin: auto;
+    display: flex;
+    gap: 60px;
+    margin-block: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    opacity: .8;
+
+    img {
+        height: 80px;
+    }
+}
+
+.sectionSponsors::-webkit-scrollbar {
+        display: none;
+}

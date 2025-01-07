@@ -1,6 +1,8 @@
 import styles from './Footer.module.css';
 import logo from '../../images/turingo_Logo.jpg'
 import { useState } from 'react';
+import { FaPlus } from "react-icons/fa6";
+import { FiMinus } from "react-icons/fi";
 
 export default function Footer() {
 
@@ -31,7 +33,7 @@ export default function Footer() {
         <footer>
             <section className={styles.section1}>
                 <div className={styles.sobreTuringo}>
-                    <label className={styles.titleUl} onClick={handleClick}><i>{!isActive ? plusLess= "+" : plusLess="-"} </i>Sobre o Turingo</label>
+                    <label className={styles.titleUl} onClick={handleClick}><i>{!isActive ? plusLess= <FaPlus /> : plusLess=<FiMinus />} </i>Sobre o Turingo</label>
                     <ul className={isActive ? styles.containerInfoAble : styles.containerInfo}>
                         <li>ALguma coisa</li>
                         <li>ALguma coisa</li>
@@ -44,7 +46,7 @@ export default function Footer() {
                 </div>
 
                 <div className={styles.explorar}>
-                    <label className={styles.titleUl} onClick={handleClick1}><i>{!isActive1 ? plusLess= "+" : plusLess="-"} </i>Explorar</label>
+                    <label className={styles.titleUl} onClick={handleClick1}><i>{!isActive1 ? plusLess= <FaPlus /> : plusLess=<FiMinus />} </i>Explorar</label>
                     <ul className={isActive1 ? styles.containerInfoAble : styles.containerInfo}>
                         <li>ALguma coisa</li>
                         <li>ALguma coisa</li>
@@ -57,7 +59,7 @@ export default function Footer() {
                 </div>
 
                 <div className={styles.facaNegocios}>
-                    <label className={styles.titleUl} onClick={handleClick2}><i>{!isActive2 ? plusLess= "+" : plusLess="-"} </i>Faça negócios connosco</label>
+                    <label className={styles.titleUl} onClick={handleClick2}><i>{!isActive2 ? plusLess= <FaPlus /> : plusLess=<FiMinus />} </i>Faça negócios connosco</label>
                     <ul className={isActive2 ? styles.containerInfoAble : styles.containerInfo}>
                         <li>ALguma coisa</li>
                         <li>ALguma coisa</li>
@@ -70,7 +72,7 @@ export default function Footer() {
                 </div>
 
                 <div className={styles.sitesTuringo}>
-                    <label className={styles.titleUl} onClick={handleClick3}><i>{!isActive3 ? plusLess= "+" : plusLess="-"} </i>Sites da Turingo</label>
+                    <label className={styles.titleUl} onClick={handleClick3}><i>{!isActive3 ? plusLess= <FaPlus /> : plusLess=<FiMinus />} </i>Sites da Turingo</label>
                     <ul className={isActive3 ? styles.containerInfoAble : styles.containerInfo}>
                         <li>ALguma coisa</li>
                         <li>ALguma coisa</li>

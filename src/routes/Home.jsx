@@ -1,4 +1,4 @@
-import Recommendation from "../components/recommendation_section/Recommendation";
+import Recommendation from "../components/recommendation/Recommendation";
 import Footer from "../components/footer/Footer";
 import img1 from '../images/img1.jpg'
 import img2 from '../images/img2.jpg'
@@ -9,7 +9,8 @@ import img6 from '../images/img6.jpg'
 import img7 from '../images/img7.jpg'
 import arrowLeft from '../icons/arrowLeft.svg';
 import arrowRigth from '../icons/arrowRigth.svg';
-import ProvincePresentation from "../components/province_presentation_section/provincePresentation";
+import Sponsors from "../components/sponsors/Page.jsx";
+import ProvincePresentation from "../components/province_presentation_section/Page.jsx";
 
 export default function Home() {
 
@@ -55,6 +56,7 @@ export default function Home() {
     return(
        <>
        <ProvincePresentation nameOfProvince={"Benguela"}/>
+       <Sponsors/>
        </>
     );
 }

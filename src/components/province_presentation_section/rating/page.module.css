@@ -9,7 +9,6 @@
   
   .rating label {
     float: right;
-    cursor: pointer;
     color: #ffd700 ;
     transition: color 0.3s;
   }

@@ -17,7 +17,6 @@ footer{
         flex:none;
         width: 100%;
         padding: 10px;
-
         & .titleUl {
             cursor: pointer;
             opacity: .8;
@@ -36,6 +35,7 @@ footer{
             }
         }
     }
+
 }
 .section2 {
     width: 100%;

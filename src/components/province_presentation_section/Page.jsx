@@ -1,14 +1,14 @@
-import styles from './provincePresentation.module.css';
-import Rating from './rating/rating';
-import heartBold from '../../images/heart_bold.png';
+import styles from './page.module.css';
+import Rating from './rating/Page.jsx';
+import publicidade from '../../images/advertising.png'
 import heart from '../../images/heart.png';
 import boxOut from '../../images/inbox_out.png';
-import AutoSlider from './slider/slider';
+import Slider from "./slider/Page.jsx";
 
 export default function ProvincePresentation(props) {
 
     return (
-        <section>
+        <section className={styles.sectionMain}>
             <section className= {styles.nameProvince}>
                 <div className={styles.containerClassification}>
                     <h2>{props.nameOfProvince}</h2>
@@ -28,21 +28,21 @@ export default function ProvincePresentation(props) {
                     </div>
                 </div>
             </section>
-            <section className={styles.aboutProvince}>
-
-                <div className={styles.containerSlider}>
-                <AutoSlider/>
+            <section className={styles.infoProvince}>
+                <div className={styles.containerSlide}>
+                <Slider/>
                 </div>
 
-                <div className={styles.provinceInfo}>
-                    <h1>Sobre {props.nameOfProvince}</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad suscipit repellendus nobis magnam consectetur voluptate veritatis </p>
+                <div className={styles.aboutUs}>
+                    <h2>
+                        Sobre {props.nameOfProvince}
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus a similique soluta quod! Odio minus totam aut at accusamus atque laudantium libero natus sapiente, ipsa ipsum laborum ea. Ut, accusamus.</p>
                 </div>
 
-                <div className={styles.advertisingContainer}>
-
+                <div className={styles.advertising}>
+                    <img src={publicidade} alt="publicidade" />
                 </div>
-
             </section>
         </section>
     );

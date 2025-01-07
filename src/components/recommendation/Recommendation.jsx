@@ -1,4 +1,5 @@
 import styles from "./Recommendation.module.css"
+import { FaRegHeart } from "react-icons/fa";
 import heart from '../../icons/heart.svg';
 import { useRef } from "react";
 export default function Recommendation({titulo, paragrafo,data, arrowLeft, arrowRigth}) {
@@ -25,18 +26,19 @@ export default function Recommendation({titulo, paragrafo,data, arrowLeft, arrow
 
             <div className={styles.containerCarousel} ref={carousel}>
                     {  /* Renderização dos cards */
-                    data.map(({id,infoImg, src})=> {
+                    data.map(({id,label, src})=> {
                         return (
 
                             <div className={styles.containerDestino} key={id}>
 
-                            <div className={styles.img}>
+                            <div className={styles.imgCard}>
                                 <img src={src} alt="imgFundo" className={styles.imgCard} />
-                                <img src={heart} alt="icons" className={styles.icon}/>
+                                <FaRegHeart 
+                                className={styles.icon}/>
                             </div>
 
                             <p className={styles.infoDestino}>
-                                {infoImg}
+                                {label}
                             </p>
                             </div>
                         )})
