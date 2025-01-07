@@ -1,5 +1,5 @@
 import styles from './page.module.css';
-import logo from '../../images/turingo_Logo.jpg'
+import logo from '../../images/app_logos/expanded_logo.png'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 

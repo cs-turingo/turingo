@@ -4,6 +4,7 @@ import { createBrowserRouter } from 'react-router-dom';
 // importação das páginas
 import App from '../App.jsx';
 import Home from '../routes/Home/Page.jsx';
+import Provincie from '../routes/Provincie/Page.jsx';
 import Test from '../routes/Teste/Page.jsx';
 import ErrorPage from '../routes/ErrorPage/Page.jsx';
 
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {path: '/', element: <Home />},
+      {path: '/provincie/:id', element: <Provincie />},
       {path: '/teste', element: <Test />},
     ]
   }
@@ -23,6 +25,7 @@ const router = createBrowserRouter([
 // listando rotas para possíveis renderizações
 const routes = [
   {path: '/', name: "Página Inicial"},
+  {path: '/provincie/:id', name: "Província - Visite agora a sua..."},
   {path: '/teste', name: "Teste"}
 ];
 

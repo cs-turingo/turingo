@@ -2,7 +2,7 @@
   list-style: none;
 }
 
-.shadow {
+.headerVersion {
   @media screen and (max-width: 700px) {
     position: fixed;
     top: 0;
@@ -13,14 +13,14 @@
     pointer-events: none;
     transition: background-color 0.3s ease-in-out;
 
-    &.shadow:not(.closed) {
+    &.headerVersion:not(.closed) {
       pointer-events: auto;
       background-color: rgba(0, 0, 0, 0.5);
     }
 
     .navBar {
       position: fixed;
-      z-index: 4;
+      z-index: 19;
       top: 0;
       left: 0;
       transition: left .3s ease-in-out;
@@ -93,4 +93,8 @@
       }
     }
   }
+}
+
+.footerVersion {
+
 }
